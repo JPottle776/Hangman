@@ -1,0 +1,95 @@
+/* 
+Author: Jamin Pottle
+Date:2.9.18 
+
+filename: hangman.css
+*/
+
+
+/* h1 styles */
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: darkred;
+    font-size: 5em;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+
+/* background styles */
+
+html {
+    background: black;
+}
+
+
+/* p styles */
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 0%;
+    padding: 0%;
+    clear: both;
+    display: table;
+    content: "";
+    word-wrap: break-word;
+    width: 100%;
+}
+
+#writeWrong {
+    margin-top: 0%;
+}
+
+
+/* label styles */
+
+label {
+    color: rgba(0, 174, 255, 0.699);
+    font-size: 3em;
+}
+
+
+/* input sytles */
+
+input {
+    color: darkblue;
+    font-size: 1.5em;
+}
+
+
+/* div styles */
+
+div.container {
+    width: 100%;
+    clear: both;
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^="col"] {
+    float: left;
+}
+
+div.col50 {
+    width: 50%;
+    text-align: center;
+}
+
+div.col75 {
+    width: 75%;
+}
+
+div.col25 {
+    width: 25%;
+}
+
+#words {
+    height: 60px;
+}

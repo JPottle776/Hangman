@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    Hang The Man
+    Author: Jamin Pottle
+    Date:2.9.18 
+
+    filename: index.html
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="hangman.css">
+    <title>World's Best Hangman</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hang The Man</h1>
+    </header>
+
+    <div class="container">
+        <!-- <input type="checkbox" name="guessNum" id="guessNum"> -->
+        <div class="col75">
+            <p id="misses"></p>
+        </div>
+        <div class="col25">
+            <p id="score"></p>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="col50">
+            <label for="word">Type your word here:</label><br><br>
+            <input type="text" name="word" placeholder="Enter Word Here" id="word">
+            <input type="button" value="Hide Word" id="getWord"><br>
+            <p id="noWord"></p>
+        </div>
+
+        <div class="col50">
+            <label for="letter">Guess letter here:</label><br><br>
+            <input type="text" maxlength="1" placeholder="Enter Guess Here" name="letter" id="letter">
+            <input type="button" value="Check" id="checkButton">
+
+        </div>
+    </div>
+    <br>
+    <div class="container" id="words">
+        <div class="col50">
+            <!-- <p>Wrong/guess letters:</p> -->
+            <p id="writeWrong"></p>
+        </div>
+        <div class="col50">
+            <!-- <p>Correct Letters:</p> -->
+            <p id="writeWord"></p>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <img src="hm0.png" id="pic" alt="">
+    </div>
+    <script src="hm.js"></script>
+</body>
+
+</html>
