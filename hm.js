@@ -56,6 +56,7 @@ function checkWord() {
         if (arraySplit[i] === guessLetter) {
             guessWord[i] = guessLetter;
             document.getElementById("writeWord").innerHTML = "Right Letters: <br>" + guessWord;
+            document.getElementById("letter").value = "";
             guessRight = true;
             score += 100;
             document.getElementById("score").innerHTML = "Score: " + score;
@@ -76,6 +77,7 @@ function checkWord() {
         if (arraySplit[i] != guessLetter) {
             wrong[i] != guessLetter;
             wrong.push(guessLetter);
+            document.getElementById("letter").value = "";
             //creates a new array that doesn't allow any duplicates to the web page it prints f instead of f,f,f,f,f...
             var rightWrong = Array.from(new Set(wrong));
             document.getElementById("writeWrong").innerHTML = "Wrong Letters: <br>" + rightWrong;
